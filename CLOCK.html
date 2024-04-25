@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JavaScript Clock</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 220px;
+        font-size: 80px;
+    }
+</style>
+</head>
+<body>
+<div id="clock"></div>
+<script>
+    function updateClock() {
+        document.getElementById("clock").textContent = new Date().toLocaleTimeString();
+    }
+
+    setInterval(updateClock, 1000);
+    updateClock();
+</script>
+</body>
+</html>
